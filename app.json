@@ -1,6 +1,6 @@
 {
 
-    "name": "Aviax Music",
+    "name": "Rishu Music",
 
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
 
@@ -110,7 +110,7 @@
 
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Do not ever try to put channel ID here.",
 
-        "value": "",
+        "value": "-1001992970818",
 
         "required": true
 
