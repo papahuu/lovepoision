@@ -53,6 +53,9 @@ def stream_markup_timer(_, chat_id, played, dur):
     else:
         bar = "—————————◉"
     buttons = [
+        [   
+            InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/RADHE_MUSIC_ROBOT?startgroup=true&admin=delete_messages+invite_users",)
+        ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
