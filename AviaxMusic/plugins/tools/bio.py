@@ -1,4 +1,4 @@
-from utils import is_admin
+
 from AviaxMusic import app
 import re
 from pyrogram import Client, filters, enums, errors
@@ -18,6 +18,13 @@ warnings = {}  # user_id: warning_count
 default_warning_limit = 3
 default_punishment = "mute"
 approved_users = {5738579437, 6258915779, 8093150680}
+
+async def is_admin(client, chat_id, user_id):
+    try:
+        member = await client.get_chat_member(chat_id, user_id)
+        return member.status in ["administrator", "creator"]
+    except Exception:
+        return False
 
 # Toggle per group
 bio_protection_enabled = {}  # Keeps bio protector ON/OFF per group
