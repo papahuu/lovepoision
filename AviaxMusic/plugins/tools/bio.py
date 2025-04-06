@@ -32,9 +32,15 @@ bio_protection_enabled = {}  # Keeps bio protector ON/OFF per group
 @app.on_message(filters.command("bio_protect") & filters.group)
 async def toggle_bio_protection(client, message):
     chat_id = message.chat.id
+    user_id = message.from_user.id
 
-    if not await is_admin(client, chat_id, message.from_user.id):
-        return await message.reply_text("❌ You must be an admin to use this command.")
+    # Debug line
+    member = await client.get_chat_member(chat_id, user_id)
+    print(f"DEBUG: user={user_id}, status={member.status}")
+
+    # REMOVE admin check temporarily just to test
+    # if not await is_admin(client, chat_id, user_id):
+    #     return await message.reply_text("❌ You must be an admin to use this command.")
 
     current = bio_protection_enabled.get(chat_id, True)
     new_status = not current
