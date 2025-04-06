@@ -1,3 +1,5 @@
+
+from AviaxMusic import app
 import re
 from pyrogram import Client, filters, enums, errors
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ChatPermissions
