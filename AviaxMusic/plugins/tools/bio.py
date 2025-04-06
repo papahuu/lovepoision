@@ -1,4 +1,4 @@
-
+from utils import is_admin
 from AviaxMusic import app
 import re
 from pyrogram import Client, filters, enums, errors
