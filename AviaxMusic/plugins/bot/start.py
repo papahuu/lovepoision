@@ -9,9 +9,9 @@ from youtubesearchpython.__future__ import VideosSearch
 import config
 from AviaxMusic import app
 from AviaxMusic.misc import _boot_
-from NEXIOMUSIC.plugins.sudo.sudoers import sudoers_list
-from NEXIOMUSIC.utils import bot_sys_stats
-from NEXIOMUSIC.utils.database import (
+from AviaxMusic.plugins.sudo.sudoers import sudoers_list
+from AviaxMusic.utils import bot_sys_stats
+from AviaxMusic.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -21,9 +21,9 @@ from NEXIOMUSIC.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from NEXIOMUSIC.utils.decorators.language import LanguageStart
-from NEXIOMUSIC.utils.formatters import get_readable_time
-from NEXIOMUSIC.utils.inline import help_pannel, private_panel, start_panel
+from AviaxMusic.utils.decorators.language import LanguageStart
+from AviaxMusic.utils.formatters import get_readable_time
+from AviaxMusic.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
