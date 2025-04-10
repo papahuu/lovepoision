@@ -91,11 +91,11 @@ async def progress_bar(message):
     ]
 
     for step in progress:
-        await baby.edit_text(f"**{step}**")
+        await baby.edit_text(f"<b>{step}</b>")
         await asyncio.sleep(0.3)  # Adjust delay for smooth updates
 
     # Final message bhejo
-    await baby.edit_text("**❖ Jᴀʏ sʜʀᴇᴇ ʀᴀᴍ 🚩...**")
+    await baby.edit_text("<b>❖ Jᴀʏ sʜʀᴇᴇ ʀᴀᴍ 🚩...</b>")
     await asyncio.sleep(1)
     await baby.delete()
 
