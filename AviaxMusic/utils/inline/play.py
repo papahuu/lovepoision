@@ -54,7 +54,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "—————————◉"
     buttons = [
         [   
-            InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/RADHE_MUSIC_ROBOT?startgroup=true&admin=delete_messages+invite_users",)
+            InlineKeyboardButton(text=_["S_B_3"], url=f"http://t.me/xcovbot?startgroup=true&admin=delete_messages+invite_users",)
         ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
