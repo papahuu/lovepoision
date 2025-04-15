@@ -1,6 +1,6 @@
 {
 
-    "name": "Rishu Music",
+    "name": "Radhe Music",
 
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
 
@@ -70,7 +70,7 @@
 
         "description": "The user id of user whom you would like to add as OWNER.",
 
-        "value": "5738579437",
+        "value": "8093150680",
 
         "required": true
 
