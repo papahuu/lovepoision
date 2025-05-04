@@ -51,7 +51,7 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("ll_BOTCHAMBER_ll")
+                await self.one.join_chat("BOTMINE-TECH")
                 await self.one.join_chat("DP_WORLD7")
             except:
                 pass
@@ -73,7 +73,7 @@ class Userbot(Client):
             await self.two.start()
             try:
                 await self.two.join_chat("DP_WORLD7")
-                await self.one.join_chat("ll_BOTCHAMBER_ll")
+                await self.one.join_chat("BOTMINE-TECH")
             except:
                 pass
             assistants.append(2)
@@ -93,7 +93,7 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("ll_BOTCHAMBER_ll")
+                await self.three.join_chat("BOTMINE-TECH")
                 await self.one.join_chat("DP_WORLD7")
             except:
                 pass
